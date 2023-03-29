@@ -1,10 +1,10 @@
-package tp12Modelo;
+package TP22_Modelo;
 
-public class Bebida {
+public class Plato {
 	private String nombre;
 	private int precio;
 
-	public Bebida(String nombre, int precio) {
+	public Plato(String nombre, int precio) {
 		this.nombre = nombre;
 		this.precio = precio;
 	}
@@ -12,4 +12,5 @@ public class Bebida {
 	public int precio() {
 		return this.precio;
 	}
+
 }

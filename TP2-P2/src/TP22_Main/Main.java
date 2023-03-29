@@ -1,15 +1,15 @@
-package TP12Main;
+package TP22_Main;
 
 import java.util.ArrayList;
 
-import EnDiscoRegistrarPago.BaseRegistrarPago;
-import EnDiscoRegistrarPago.EnDiscoRegistrarPago;
-import tp12Modelo.Bebida;
-import tp12Modelo.Mastercard;
-import tp12Modelo.Pedido;
-import tp12Modelo.Plato;
-import tp12Modelo.RegistrarPago;
-import tp12Modelo.Tarjeta;
+import TP22_Modelo.Bebida;
+import TP22_Modelo.Mastercard;
+import TP22_Modelo.Pedido;
+import TP22_Modelo.Plato;
+import TP22_Modelo.RegistrarPago;
+import TP22_Modelo.Tarjeta;
+import TP22_Persistencia.BaseRegistrarPago;
+import TP22_Persistencia.EnDiscoRegistrarPago;
 
 public class Main {
 	public static void main(String[] args) {
@@ -33,7 +33,7 @@ public class Main {
 		System.out.println("********************");
 		System.out.println("EN BASE DE DATOS : BD ");
 
-		RegistrarPago registro11 = new BaseRegistrarPago("http://localhost/phpmyadmin/index.php?route=/sql&db=poo_tp2-3&table=restopago");
+		RegistrarPago registro11 = new BaseRegistrarPago();
 		Mastercard tarjetaMastercard1 = new Mastercard("Sofia Rached", 01,registro11);
 
 		Bebida bebida3 = new Bebida("Fanta", 110);
