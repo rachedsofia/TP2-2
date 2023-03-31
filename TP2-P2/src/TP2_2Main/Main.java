@@ -2,21 +2,22 @@ package TP2_2Main;
 
 import java.util.ArrayList;
 
-
 import TP2_2Modelo.Bebida;
 import TP2_2Modelo.Mastercard;
 import TP2_2Modelo.Pedido;
 import TP2_2Modelo.Plato;
 import TP2_2Modelo.RegistrarPago;
 import TP2_2Modelo.Tarjeta;
-import TP2_2Persistencia.BaseRegistrarPago;
-import TP2_2Persistencia.EnDiscoRegistrarPago;
+import TP2_2Persistencia.ObjetoDeMentira;
 
 public class Main {
 	public static void main(String[] args) {
+
 		System.out.println("EN DISCO : TEXTO ");
-		RegistrarPago registro1 = new EnDiscoRegistrarPago("C:\\Users\\msofi\\OneDrive\\Escritorio\\Prueba.txt\\TP2-2-Reg.txt");
-		Tarjeta tarjetaViedma = new Tarjeta("Pepito Lopez", 04,registro1);
+//		RegistrarPago registro1 = new EnDiscoRegistrarPago("C:\\Users\\msofi\\OneDrive\\Escritorio\\Prueba.txt\\TP2-2-Reg.txt");
+
+		RegistrarPago registro1 = new ObjetoDeMentira();
+		Tarjeta tarjetaViedma = new Tarjeta("Pepito Lopez", 04, registro1);
 
 		Bebida bebida = new Bebida("Coca Cola", 120);
 
@@ -29,13 +30,14 @@ public class Main {
 
 		listaPlatos1.add(plato1);
 		Pedido pedido4 = new Pedido(listaPlatos1, listaBebidas1);
-		System.out.println(tarjetaViedma.calcularCosto(pedido4));	
-		
+		System.out.println(tarjetaViedma.calcularCosto(pedido4));
+
 		System.out.println("********************");
 		System.out.println("EN BASE DE DATOS : BD ");
 
-		RegistrarPago registro11 = new BaseRegistrarPago("jdbc:mysql://127.0.0.1/poo_tp2-3","root", "");
-		Mastercard tarjetaMastercard1 = new Mastercard("Sofia Rached", 01,registro11);
+//		RegistrarPago registro11 = new BaseRegistrarPago("jdbc:mysql://127.0.0.1/poo_tp2-3", "root", "");
+		RegistrarPago registro11 = new ObjetoDeMentira();
+		Mastercard tarjetaMastercard1 = new Mastercard("Sofia Rached", 01, registro11);
 
 		Bebida bebida3 = new Bebida("Fanta", 110);
 		Bebida bebida4 = new Bebida("Sprite", 110);
@@ -52,6 +54,8 @@ public class Main {
 		listaPlatos2.add(plato3);
 		Pedido pedido3 = new Pedido(listaPlatos2, listaBebidas2);
 		System.out.println(tarjetaMastercard1.calcularCosto(pedido3));
-		
+
+		System.out.println("EN MailTrap ");
+
 	}
 }
