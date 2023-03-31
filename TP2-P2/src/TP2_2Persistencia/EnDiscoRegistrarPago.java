@@ -1,4 +1,4 @@
-package TP22_Persistencia;
+package TP2_2Persistencia;
 
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.time.LocalDate;
 
-import TP22_Modelo.RegistrarPago;
+import TP2_2Modelo.RegistrarPago;
 
 public class EnDiscoRegistrarPago implements RegistrarPago{
 

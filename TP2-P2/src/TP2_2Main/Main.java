@@ -1,15 +1,15 @@
-package TP22_Main;
+package TP2_2Main;
 
 import java.util.ArrayList;
 
-import TP22_Modelo.Bebida;
-import TP22_Modelo.Mastercard;
-import TP22_Modelo.Pedido;
-import TP22_Modelo.Plato;
-import TP22_Modelo.RegistrarPago;
-import TP22_Modelo.Tarjeta;
-import TP22_Persistencia.BaseRegistrarPago;
-import TP22_Persistencia.EnDiscoRegistrarPago;
+import TP2_2Modelo.Bebida;
+import TP2_2Modelo.Mastercard;
+import TP2_2Modelo.Pedido;
+import TP2_2Modelo.Plato;
+import TP2_2Modelo.RegistrarPago;
+import TP2_2Modelo.Tarjeta;
+import TP2_2Persistencia.BaseRegistrarPago;
+import TP2_2Persistencia.EnDiscoRegistrarPago;
 
 public class Main {
 	public static void main(String[] args) {

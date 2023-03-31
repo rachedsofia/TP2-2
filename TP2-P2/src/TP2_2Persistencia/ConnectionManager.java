@@ -1,4 +1,4 @@
-package TP22_Persistencia;
+package TP2_2Persistencia;
 
 import java.util.Properties;
 import java.util.ResourceBundle;

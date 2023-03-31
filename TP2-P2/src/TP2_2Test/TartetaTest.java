@@ -1,4 +1,4 @@
-package TP12Test;
+package TP2_2Test;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,16 +6,16 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
 
-import TP22_Modelo.Bebida;
-import TP22_Modelo.ComarcaPlus;
-import TP22_Modelo.Mastercard;
-import TP22_Modelo.Pedido;
-import TP22_Modelo.Plato;
-import TP22_Modelo.RegistrarPago;
-import TP22_Modelo.Tarjeta;
-import TP22_Modelo.Visa;
-import TP22_Persistencia.BaseRegistrarPago;
-import TP22_Persistencia.EnDiscoRegistrarPago;
+import TP2_2Modelo.Bebida;
+import TP2_2Modelo.ComarcaPlus;
+import TP2_2Modelo.Mastercard;
+import TP2_2Modelo.Pedido;
+import TP2_2Modelo.Plato;
+import TP2_2Modelo.RegistrarPago;
+import TP2_2Modelo.Tarjeta;
+import TP2_2Modelo.Visa;
+import TP2_2Persistencia.BaseRegistrarPago;
+import TP2_2Persistencia.EnDiscoRegistrarPago;
 
 public class TartetaTest {
 	@Test

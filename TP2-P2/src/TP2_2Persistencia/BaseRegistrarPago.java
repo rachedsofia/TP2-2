@@ -1,8 +1,8 @@
-package TP22_Persistencia;
+package TP2_2Persistencia;
 
 import java.time.LocalDate;
 
-import TP22_Modelo.RegistrarPago;
+import TP2_2Modelo.RegistrarPago;
 
 public class BaseRegistrarPago implements RegistrarPago {
 	private PedidoJDBC pedidoJDBC = new PedidoJDBC();
