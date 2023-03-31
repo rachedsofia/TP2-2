@@ -15,4 +15,14 @@ public class ObjetoDeMentira implements RegistrarPago {
 
 	}
 
+	int monto;
+
+	public boolean comparar(int montoA) {
+		if (monto == montoA) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 }
