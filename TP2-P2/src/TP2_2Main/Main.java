@@ -2,6 +2,7 @@ package TP2_2Main;
 
 import java.util.ArrayList;
 
+
 import TP2_2Modelo.Bebida;
 import TP2_2Modelo.Mastercard;
 import TP2_2Modelo.Pedido;
@@ -33,7 +34,7 @@ public class Main {
 		System.out.println("********************");
 		System.out.println("EN BASE DE DATOS : BD ");
 
-		RegistrarPago registro11 = new BaseRegistrarPago();
+		RegistrarPago registro11 = new BaseRegistrarPago("jdbc:mysql://127.0.0.1/poo_tp2-3","root", "");
 		Mastercard tarjetaMastercard1 = new Mastercard("Sofia Rached", 01,registro11);
 
 		Bebida bebida3 = new Bebida("Fanta", 110);

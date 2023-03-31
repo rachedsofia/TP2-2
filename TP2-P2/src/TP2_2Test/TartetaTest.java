@@ -2,17 +2,15 @@ package TP2_2Test;
 
 import static org.junit.Assert.assertEquals;
 
+
 import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
 
 import TP2_2Modelo.Bebida;
-import TP2_2Modelo.ComarcaPlus;
-import TP2_2Modelo.Mastercard;
 import TP2_2Modelo.Pedido;
 import TP2_2Modelo.Plato;
 import TP2_2Modelo.RegistrarPago;
-import TP2_2Modelo.Tarjeta;
 import TP2_2Modelo.Visa;
 import TP2_2Persistencia.BaseRegistrarPago;
 import TP2_2Persistencia.EnDiscoRegistrarPago;
@@ -45,7 +43,7 @@ public class TartetaTest {
 	@Test
 	public void calcularCostoTarjetaVisaBD() {
 		// inicialización
-		RegistrarPago registro13 = new BaseRegistrarPago();
+		RegistrarPago registro13 = new BaseRegistrarPago("jdbc:mysql://127.0.0.1/poo_tp2-3","root", "");
 		Visa tarjetaVisa = new Visa("Jorge Rached", 03,registro13);
 
 		Bebida bebida1 = new Bebida("Agua", 100);
