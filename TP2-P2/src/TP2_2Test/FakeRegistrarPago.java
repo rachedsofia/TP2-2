@@ -1,12 +1,12 @@
-package TP2_2Persistencia;
+package TP2_2Test;
 
 import java.time.LocalDate;
 
 import TP2_2Modelo.RegistrarPago;
 
-public class ObjetoDeMentira implements RegistrarPago {
+public class FakeRegistrarPago implements RegistrarPago {
 
-	public ObjetoDeMentira() {
+	public FakeRegistrarPago() {
 	}
 
 	@Override

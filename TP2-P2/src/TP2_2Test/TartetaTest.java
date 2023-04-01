@@ -11,7 +11,6 @@ import TP2_2Modelo.Pedido;
 import TP2_2Modelo.Plato;
 import TP2_2Modelo.RegistrarPago;
 import TP2_2Modelo.Visa;
-import TP2_2Persistencia.ObjetoDeMentira;
 
 public class TartetaTest {
 	@Test
@@ -19,7 +18,7 @@ public class TartetaTest {
 		// inicialización
 		// RegistrarPago registro = new
 		// EnDiscoRegistrarPago("C:\\Users\\msofi\\OneDrive\\Escritorio\\Prueba.txt\\TP2-2-Reg.txt");
-		RegistrarPago registro = new ObjetoDeMentira();
+		RegistrarPago registro = new FakeRegistrarPago();
 		Visa tarjetaVisa = new Visa("Jorge Rached", 03, registro);
 
 		Bebida bebida1 = new Bebida("Agua", 100);
@@ -45,7 +44,7 @@ public class TartetaTest {
 	public void calcularCostoTarjetaVisaBD() {
 		// inicialización
 //		RegistrarPago registro13 = new BaseRegistrarPago("jdbc:mysql://127.0.0.1/poo_tp2-3", "root", "");
-		RegistrarPago registro13 = new ObjetoDeMentira();
+		RegistrarPago registro13 = new FakeRegistrarPago();
 		Visa tarjetaVisa = new Visa("Jorge Rached", 03, registro13);
 
 		Bebida bebida1 = new Bebida("Agua", 100);

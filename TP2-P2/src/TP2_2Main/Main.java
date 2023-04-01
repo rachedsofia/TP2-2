@@ -8,7 +8,7 @@ import TP2_2Modelo.Pedido;
 import TP2_2Modelo.Plato;
 import TP2_2Modelo.RegistrarPago;
 import TP2_2Modelo.Tarjeta;
-import TP2_2Persistencia.ObjetoDeMentira;
+import TP2_2Test.FakeRegistrarPago;
 
 public class Main {
 	public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Main {
 		System.out.println("EN DISCO : TEXTO ");
 //		RegistrarPago registro1 = new EnDiscoRegistrarPago("C:\\Users\\msofi\\OneDrive\\Escritorio\\Prueba.txt\\TP2-2-Reg.txt");
 
-		RegistrarPago registro1 = new ObjetoDeMentira();
+		RegistrarPago registro1 = new FakeRegistrarPago();
 		Tarjeta tarjetaViedma = new Tarjeta("Pepito Lopez", 04, registro1);
 
 		Bebida bebida = new Bebida("Coca Cola", 120);
@@ -36,7 +36,7 @@ public class Main {
 		System.out.println("EN BASE DE DATOS : BD ");
 
 //		RegistrarPago registro11 = new BaseRegistrarPago("jdbc:mysql://127.0.0.1/poo_tp2-3", "root", "");
-		RegistrarPago registro11 = new ObjetoDeMentira();
+		RegistrarPago registro11 = new FakeRegistrarPago();
 		Mastercard tarjetaMastercard1 = new Mastercard("Sofia Rached", 01, registro11);
 
 		Bebida bebida3 = new Bebida("Fanta", 110);
